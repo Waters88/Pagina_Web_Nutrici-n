@@ -1,0 +1,100 @@
+<section id="consultas" class="services">
+    <div class="containers">
+        <h2 class="text-6xl md:text-6xl font-bold text-center text-lime-700 mb-12 section-title">Selecciona la consulta de tu interés</h2>
+        <div class="consultation-types">
+            <div class="consultation-card">
+                <input type="radio" name="consulta" id="presencial" class="radio" onclick="document.getElementById('asesoria_presencial').style.display='flex';document.getElementById('asesoria_online').style.display='none'">
+                <label for="presencial">
+                    <div class="consultation-header">
+                        <div class="consultation-type">CONSULTA PRESENCIAL</div>
+                        <div class="price">$650.00 MX</div>
+                        <div class="duration">Duración: 1 hora</div>
+                    </div>
+                </label>
+            </div>
+            
+            <div class="consultation-card">
+                <input type="radio" name="consulta" id="online" class="radio" onclick="document.getElementById('asesoria_online').style.display='flex';document.getElementById('asesoria_presencial').style.display='none'">
+                <label for="online" >
+                    <div class="consultation-header">
+                        <div class="consultation-type">CONSULTA ONLINE</div>
+                        <div class="price">$550.00 MX</div>
+                        <div class="duration">Duración: 1 hora</div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>  
+
+    <br><br><hr style="height: 2px; border: none; background-color: gray;"><br><br>
+
+    <div id="asesoria_presencial" style="text-align: center; justify-content: center; display:none">
+        <article class="card" role="region" aria-labelledby="titulo-asesoria">
+            <h1 id="titulo-asesoria">Tu asesoría incluye</h1>
+            <section class="segments">
+                <div class="segment">
+                <span class="num">1</span>
+                <p class="texto">Valoración nutricional completa<span class="emoji">📝🍏</span></p>
+                </div>
+                <div class="segment">
+                <span class="num">2</span>
+                <p class="texto">Plan de alimentación personalizado<span class="emoji">🍽️📋</span></p>
+                </div>
+                <div class="segment">
+                <span class="num">3</span>
+                <p class="texto">Medidas antropométricas<span class="emoji">📏📐</span></p>
+                </div>
+                <div class="segment">
+                <span class="num">4</span>
+                <p class="texto">Medición con INBODY<span class="emoji">⚖️🧬</span></p>
+                </div>
+                <div class="segment">
+                <span class="num">5</span>
+                <p class="texto">Educación nutricional<span class="emoji">🎓💡</span></p>
+                </div>
+                <div class="segment">
+                <span class="num">6</span>
+                <p class="texto">Materiales digitales<span class="emoji">📲💾</span></p>
+                </div>
+            </section>
+        </article>
+    </div>
+
+    <div id="asesoria_online" style="text-align: center; justify-content: center; display:none">
+        <article class="card" role="region" aria-labelledby="titulo-asesoria">
+            <h1 id="titulo-asesoria">Tu asesoría incluye</h1>
+            <section class="segments">
+                <div class="segment">
+                <span class="num">1</span>
+                <p class="texto">Valoración nutricional<span class="emoji">📝🍏</span></p>
+                </div>
+                <div class="segment">
+                <span class="num">2</span>
+                <p class="texto">Plan de alimentación personalizado<span class="emoji">🍽️📋</span></p>
+                </div>
+                <div class="segment">
+                <span class="num">3</span>
+                <p class="texto">Lista de recomendaciones<span class="emoji">✅📃</span></p>
+                </div>
+                <div class="segment">
+                <span class="num">4</span>
+                <p class="texto">eBook de marcas recomendadas<span class="emoji">📚🏷️</span></p>
+                </div>
+                <div class="segment">
+                <span class="num">5</span>
+                <p class="texto">Educación nutricional<span class="emoji">🎓💡</span></p>
+                </div>
+                <div class="segment">
+                <span class="num">6</span>
+                <p class="texto">Seguimiento vía WhatsApp<span class="emoji">📳💬</span></p>
+                </div>
+                <div class="segment">
+                <span class="num">7</span>
+                <p class="texto">Materiales digitales<span class="emoji">📲💾</span></p>
+                </div>
+            </section>
+        </article>
+    </div> 
+
+</section>
+

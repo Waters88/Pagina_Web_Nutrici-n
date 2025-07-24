@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrivegan - Nutrición Vegana Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url('https://placehold.co/1200x800/A3E635/4D7C0F?text=Fondo+Natural+Vegano'); /* Placeholder image */
+            background-size: cover;
+            background-position: center;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #65A30D; /* lime-600 */
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+        .service-card, .testimonial-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover, .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+    </style>
+</head>
+<body class="bg-lime-50 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-lime-600">Nutrivegan</a>
+            <div class="space-x-4">
+                <a href="#servicios" class="text-gray-600 hover:text-lime-600 px-3 py-2 rounded-md text-sm font-medium">Servicios</a>
+                <a href="#sobre-mi" class="text-gray-600 hover:text-lime-600 px-3 py-2 rounded-md text-sm font-medium">Sobre Mí</a>
+                <a href="#testimonios" class="text-gray-600 hover:text-lime-600 px-3 py-2 rounded-md text-sm font-medium">Testimonios</a>
+                <a href="#contacto" class="bg-lime-600 hover:bg-lime-700 text-white px-4 py-2 rounded-full text-sm font-medium cta-button">Agendar Consulta</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Transforma tu salud con Nutrición Vegana</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Descubre el poder de una alimentación basada en plantas para alcanzar tus objetivos de bienestar. ¡Estoy aquí para guiarte!</p>
+            <a href="#contacto" class="bg-lime-500 hover:bg-lime-600 text-white font-bold py-4 px-8 rounded-full text-lg cta-button inline-block">
+                ¡Quiero mi consulta!
+            </a>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-lime-700 mb-12 section-title">Conóceme</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                <div class="md:w-1/3 mb-8 md:mb-0">
+                    <img src="https://placehold.co/400x400/E5E7EB/4D7C0F?text=Foto+Nutriologa" alt="Foto de la Nutrióloga Vegana" class="rounded-full shadow-lg mx-auto w-64 h-64 md:w-full md:h-auto object-cover">
+                </div>
+                <div class="md:w-2/3 text-center md:text-left">
+                    <h3 class="text-2xl font-semibold text-lime-600 mb-4">Hola, soy [Nombre de la Nutrióloga]</h3>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Como nutrióloga apasionada por la alimentación vegana, mi misión es ayudarte a descubrir cómo una dieta basada en plantas puede nutrir tu cuerpo, mejorar tu energía y transformar tu vida. Creo firmemente que comer vegano no solo es ético y sostenible, sino también delicioso y increíblemente beneficioso para la salud.
+                    </p>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Con años de experiencia y formación especializada, te ofrezco un acompañamiento personalizado para que alcances tus metas de salud, ya sea perder peso, mejorar tu rendimiento deportivo, manejar condiciones específicas o simplemente adoptar un estilo de vida más saludable y consciente.
+                    </p>
+                    <a href="#contacto" class="text-lime-600 hover:text-lime-700 font-semibold">Hablemos sobre tus objetivos →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-16 md:py-24 bg-lime-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-lime-700 mb-12 section-title">Mis Servicios</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg service-card text-center">
+                    <div class="text-lime-500 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v11.494m0 0a8.485 8.485 0 0011.92 0M12 17.747a8.485 8.485 0 01-11.92 0M12 17.747l-.001-.001-.001.001zM12 6.253L12 6.252l.001.001zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-lime-600 mb-3">Consulta Nutricional Personalizada</h3>
+                    <p class="text-gray-600 text-sm">Evaluación completa y plan de alimentación vegano adaptado a tus necesidades y objetivos únicos.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg service-card text-center">
+                    <div class="text-lime-500 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-lime-600 mb-3">Planes de Comida Veganos</h3>
+                    <p class="text-gray-600 text-sm">Recibe planes de comidas semanales o mensuales, deliciosos, balanceados y fáciles de preparar.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg service-card text-center">
+                    <div class="text-lime-500 mb-4">
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-lime-600 mb-3">Coaching y Seguimiento</h3>
+                    <p class="text-gray-600 text-sm">Acompañamiento continuo para resolver dudas, ajustar tu plan y mantenerte motivado/a.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-lime-700 mb-12 section-title">Lo que dicen mis pacientes</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-lime-50 p-8 rounded-xl shadow-lg testimonial-card">
+                    <p class="text-gray-700 mb-6 italic">"[Nombre de la Nutrióloga] cambió mi perspectiva sobre la comida vegana. ¡Me siento con más energía que nunca y he perdido peso de forma saludable! Sus recetas son deliciosas."</p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/60x60/E5E7EB/4D7C0F?text=P1" alt="Foto Paciente 1" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold text-lime-600">Ana Pérez</p>
+                            <p class="text-sm text-gray-500">Paciente Satisfecha</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-lime-50 p-8 rounded-xl shadow-lg testimonial-card">
+                    <p class="text-gray-700 mb-6 italic">"Tenía dudas sobre si podría obtener todos los nutrientes con una dieta vegana, pero con la guía de [Nombre de la Nutrióloga], aprendí muchísimo y mis análisis de sangre están perfectos. ¡Totalmente recomendada!"</p>
+                    <div class="flex items-center">
+                        <img src="https://placehold.co/60x60/E5E7EB/4D7C0F?text=P2" alt="Foto Paciente 2" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold text-lime-600">Carlos López</p>
+                            <p class="text-sm text-gray-500">Deportista Vegano</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-16 md:py-24 bg-lime-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Lista/o para empezar tu viaje hacia una vida más saludable?</h2>
+            <p class="text-lg md:text-xl mb-8 max-w-xl mx-auto">Agenda tu primera consulta hoy mismo y demos juntos el primer paso.</p>
+            
+            <form class="max-w-lg mx-auto bg-white p-8 rounded-xl shadow-2xl text-gray-700">
+                <div class="mb-6">
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1 text-left">Nombre Completo</label>
+                    <input type="text" name="name" id="name" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-lime-500 focus:border-lime-500 sm:text-sm" placeholder="Tu Nombre">
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1 text-left">Correo Electrónico</label>
+                    <input type="email" name="email" id="email" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-lime-500 focus:border-lime-500 sm:text-sm" placeholder="tu@correo.com">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1 text-left">Mensaje (Opcional)</label>
+                    <textarea name="message" id="message" rows="4" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-lime-500 focus:border-lime-500 sm:text-sm" placeholder="Cuéntame un poco sobre tus objetivos..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-lime-500 hover:bg-lime-600 text-white font-bold py-3 px-6 rounded-lg text-lg cta-button">
+                    Solicitar Información de Consulta
+                </button>
+                <p class="text-xs text-gray-500 mt-4">Al enviar este formulario, aceptas que nos pongamos en contacto contigo.</p>
+            </form>
+            
+            <p class="mt-10 text-lime-100">También puedes contactarme directamente por:</p>
+            <p class="text-xl font-semibold mt-2">info@nutrivegan.com | (55) 1234-5678</p>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-300 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-2xl font-bold text-lime-500 mb-2">Nutrivegan</p>
+            <p class="mb-4">Nutrición vegana para una vida plena y saludable.</p>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="text-gray-400 hover:text-lime-400">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-lime-400">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2.014a.828.828 0 01.533-.211h8.202a.828.828 0 01.828.828V11.07a.828.828 0 01-.212.533L12.53 20.74a.828.828 0 01-1.172 0L2.014 11.455a.828.828 0 010-1.172L11.142 2.212a.828.828 0 011.173-.198zM16.5 7.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-lime-400">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                </a>
+            </div>
+            <p class="text-sm">&copy; <span id="currentYear"></span> Nutrivegan. Todos los derechos reservados.</p>
+            <p class="text-xs mt-2">Diseñado con ❤️ por [Tu Nombre/Tu Agencia si aplica]</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script para el año actual en el footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Smooth scroll para los enlaces del menú (opcional pero recomendado)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Placeholder para la funcionalidad del formulario de contacto
+        const contactForm = document.querySelector('#contacto form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                // Aquí iría la lógica para enviar el formulario (por ejemplo, usando Fetch API a un backend o un servicio como Formspree)
+                alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
+                this.reset(); // Limpia el formulario después de enviar
+            });
+        }
+    </script>
+
+</body>
+</html>
